@@ -581,7 +581,7 @@ Ao iniciar este projeto você concorda com as diretrizes do Código de Conduta e
 
 ---
 
-## 2 - Crie o modelo 'User' em 'src/database/models/user.js' com as propriedades corretas
+## 2 - Crie o modelo 'User' em 'src/database/models/User.js' com as propriedades corretas
 
 - Sua `model` deve estar no diretório correto e respeitar a nomenclatura pedida no requisito;
 - Sua `model` deve respeitar o _diagrama de Entidade-Relacionamento_ e o _formato das entidades_, como descrito na seção de [Diagrama ER e Entidades](#diagrama).
@@ -589,7 +589,7 @@ Ao iniciar este projeto você concorda com as diretrizes do Código de Conduta e
 <details>
   <summary><strong>Os seguintes pontos serão avaliados:</strong></summary>
 
-  * **[Será validado que existe o arquivo 'user.js']**
+  * **[Será validado que existe o arquivo 'User.js']**
 
   * **[Será validado que o modelo possui o nome 'User']**
 
@@ -810,7 +810,7 @@ Ao iniciar este projeto você concorda com as diretrizes do Código de Conduta e
 
 ---
 
-## 7 - Crie o modelo 'Category' em 'src/database/models/category.js' com as propriedades corretas
+## 7 - Crie o modelo 'Category' em 'src/database/models/Category.js' com as propriedades corretas
 
 - Sua `model` deve estar no diretório correto e respeitar a nomenclatura pedida no requisito;
 - Sua `model` deve respeitar o _diagrama de Entidade-Relacionamento_ e o _formato das entidades_, como descrito na seção de [Diagrama ER e Entidades](#diagrama).
@@ -818,7 +818,7 @@ Ao iniciar este projeto você concorda com as diretrizes do Código de Conduta e
 <details>
   <summary><strong>Os seguintes pontos serão avaliados</strong></summary>
 
-  * **[Será validado que existe o arquivo 'category.js']**
+  * **[Será validado que existe o arquivo 'Category.js']**
 
   * **[Será validado que o modelo possui o nome 'Category']**
 
@@ -903,7 +903,7 @@ Ao iniciar este projeto você concorda com as diretrizes do Código de Conduta e
 
 ---
 
-## 10 - Crie o modelo 'BlogPost' em 'src/database/models/blogPost.js' com as propriedades e associações corretas
+## 10 - Crie o modelo 'BlogPost' em 'src/database/models/BlogPost.js' com as propriedades e associações corretas
 
 - Sua `model` deve estar no diretório correto e respeitar a nomenclatura pedida no requisito;
 - Sua `model` deve respeitar o _diagrama de Entidade-Relacionamento_ e o _formato das entidades_, como descrito na seção de [Diagrama ER e Entidades](#diagrama);
@@ -915,7 +915,7 @@ Ao iniciar este projeto você concorda com as diretrizes do Código de Conduta e
 <details>
   <summary><strong>Os seguintes pontos serão avaliados</strong></summary>
 
-  * **[Será validado que existe o arquivo 'blogPost.js']**
+  * **[Será validado que existe o arquivo 'BlogPost.js']**
 
   * **[Será validado que o modelo possui o nome 'BlogPost']**
 
@@ -931,9 +931,9 @@ Ao iniciar este projeto você concorda com as diretrizes do Código de Conduta e
 
   * **[Será validado que o modelo possui a propriedade 'updated']**
 
-  * **[Será validado que o modelo em 'blogPost.js', define a associação 'belongsTo', com a entidade de nome 'User']**
+  * **[Será validado que o modelo em 'BlogPost.js', define a associação 'belongsTo', com a entidade de nome 'User']**
 
-  * **[Será validado que o modelo em 'user.js', define a associação 'hasMany', com a entidade de nome 'BlogPost']**
+  * **[Será validado que o modelo em 'User.js', define a associação 'hasMany', com a entidade de nome 'BlogPost']**
 
 <br />
 </details>
