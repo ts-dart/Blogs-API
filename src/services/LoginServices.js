@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 const { User } = require('../database/models');
 
 const postLogin = async ({ email, password }) => {
-  const validation = () => {
+  const joi = () => {
     const schema = Joi.object({
       email: Joi
         .string().email({ minDomainSegments: 2, tlds: { allow: false } }).required(),
@@ -15,7 +15,7 @@ const postLogin = async ({ email, password }) => {
     return schema.validate({ email, password });
   };
 
-  if (validation().error) {
+  if (joi().error) {
     return { status: 400, message: { message: 'Some required fields are missing' } };
   }
 
