@@ -35,9 +35,3 @@ module.exports = {
   getUsers,
   getUserById,
 };
-
-/*
-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.
-eyJlbWFpbCI6ImJyZXR0QGVtYWlsLmNvbSIsImlhdCI6MTY1ODI0MzE2OX0.
-oGgLwV9-Hwy-WAslf0xi0ogwK2s6RRWC7lycf8GBa18
-*/

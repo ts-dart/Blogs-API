@@ -15,6 +15,15 @@ const postCategory = async ({ name }, token) => {
   if (createdCategory) return createdCategory.dataValues;
 };
 
+const getCategories = async (token) => {
+  const val = tokenValidator(token);
+  if (!val.valid) return { status: val.status, message: val.message };
+
+  const categories = await Category.findAll();
+  return categories.map((c) => c.dataValues);
+};
+
 module.exports = {
   postCategory,
+  getCategories,
 };
