@@ -36,7 +36,19 @@ const getUsers = async (token) => {
   });
 };
 
+const getUserById = async (id, token) => {
+  const val = tokenValidator(token);
+  if (!val.valid) return { status: val.status, message: val.message };
+
+  const user = await User.findOne({ where: { id } });
+  if (!user) return { status: 404, message: 'User does not exist' };
+
+  delete user.dataValues.password;
+  return user.dataValues;
+};
+
 module.exports = {
   postUser,
   getUsers,
+  getUserById,
 };
