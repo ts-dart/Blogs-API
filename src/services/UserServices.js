@@ -1,5 +1,6 @@
 const Joi = require('joi');
 const jwt = require('jsonwebtoken');
+const tokenValidator = require('../middlewares/tokenValidator');
 const { User } = require('../database/models');
 
 const postUser = async ({ displayName, email, password, image }) => {
@@ -23,6 +24,19 @@ const postUser = async ({ displayName, email, password, image }) => {
   }
 };
 
+const getUsers = async (token) => {
+  const val = tokenValidator(token);
+  if (!val.valid) return { status: val.status, message: val.message };
+
+  const users = await User.findAll();
+  return users.map((u) => u.dataValues).map((u) => {
+    const user = u;
+    delete user.password;
+    return user;
+  });
+};
+
 module.exports = {
   postUser,
+  getUsers,
 };
