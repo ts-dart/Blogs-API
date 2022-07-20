@@ -1,5 +1,5 @@
 // const Joi = require('joi');
-const tokenValidator = require('../middlewares/tokenValidator');
+/* const tokenValidator = require('../middlewares/tokenValidator');
 const { Category } = require('../database/models');
 const { BlogPost } = require('../database/models');
 
@@ -25,8 +25,8 @@ const newPost = async ({ title, content, categoryIds }, token) => {
   });
 
   if (data) return data;
-};
-
+}; */
+const newPost = async () => 0;
 module.exports = {
   newPost,
 };
