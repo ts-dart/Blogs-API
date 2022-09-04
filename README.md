@@ -15,7 +15,7 @@ Neste projeto foi desenvolvido uma API e um banco de dados para a produção de 
 ### Habilidades
 Habilidades desenvolvidas neste projeto.
 
-* Engenharia de software, utilização de arquitetura MSC.
+* arquitetura de software, utilização de arquitetura MSC.
 
 * Interação de API com banco de dados utilizando ORM, sequelize.
 
